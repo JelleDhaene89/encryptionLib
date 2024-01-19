@@ -37,14 +37,6 @@ include(CommonConfig)
 
 # Include required Qt libraries and include directories
 find_package(Qt6Core REQUIRED)
-#find_package(Qt6Network REQUIRED)
-
-if(WIN32)
-    set(OPENSSL_USE_STATIC_LIBS TRUE)
-    set(ZLIB_USE_STATIC_LIBS TRUE) #??
-    find_package(OpenSSL REQUIRED)
-    find_package(ZLIB REQUIRED)
-endif(WIN32)
 
 add_subdirectory(src)
-#add_subdirectory(tests)
+add_subdirectory(tests)

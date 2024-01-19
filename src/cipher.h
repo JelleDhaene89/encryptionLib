@@ -2,6 +2,7 @@
 
 // Qt headers
 #include <QByteArray>
+#include <QString>
 
 // library headers
 #include "encryption_export.h"

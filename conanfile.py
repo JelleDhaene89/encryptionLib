@@ -24,11 +24,11 @@ class EncryptionLibConan(ConanFile):
             self.settings.compiler.libcxx = 'libstdc++11'
 
     requires = (
+        # add conan packages here
     )
 
-    def configure(self):
-        if self.settings.os == "Windows":
-            self.requires("openssl/3.2.0")
+#    def configure(self):
+#         nothing to do here.
 
     def build(self):
         cmake = CMake(self)
